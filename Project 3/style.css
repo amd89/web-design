@@ -1,0 +1,143 @@
+/* Global View aka Desktop */
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #EBEBEB;
+}
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.header-container {
+    background-color: rgb(60, 60, 60);
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    max-width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(43, 226, 147);
+    color: white;
+    font-size: 0.875rem;
+}
+
+.col p{
+    padding: 20px 25px; 
+    line-height: 1.25rem;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+nav a {
+    color: white;
+    border: 1px solid;
+    text-decoration: none;
+    padding: 11px 25px;
+    margin-left: 20px;
+}
+
+.logo {
+    color: white;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+/* Tablet View */
+@media (max-width: 768px){
+
+.col {
+    width: 47%;
+}
+
+.hide-desktop-only {
+    display: block;
+}
+
+
+.header-container {
+    position: relative;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    display: block;
+    margin-left: 0;
+}
+
+.logo {
+    padding: 40px 0px;
+}
+
+.mob-wrapper {
+    display: block;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.mob-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.navbutton {
+    display: block;
+    background-color: coral;
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+}
+
+/* Mobile View */
+@media (max-width: 400px){
+
+.col {
+    width: 100%;
+}
+
+.hide-mobile-only {
+    display: none;
+}
+
+
+
+}
