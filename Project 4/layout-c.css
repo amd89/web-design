@@ -1,0 +1,30 @@
+.mybox {
+    background-color: hotpink;
+    min-height: 200px;
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: red;
+}
+
+/* small */
+@media (min-width: 576px){
+    h1 {
+        color: blue;
+    }
+}
+
+/* medium */
+@media (min-width: 768px){}
+
+/* large */
+@media (min-width: 992px){
+    h1 {
+        color: yellow;
+    }
+}
+
+/* extra large */
+@media (min-width: 1200px){}
